@@ -1,34 +1,17 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './components/Header'
+import Item from './components/Item'
 
-function Header() {
-  return( 
-    <h1>Grocery Tracker WebApp</h1>
-  )
-}
-
-function Item() {
-  return(
-    <div className="item">
-      <p className="item-text">Name</p>
-      <p className="item-text"># of item</p>
-    </div>
-  )
-}
-
-function ItemList() {
-  return(
-    <Item />
-
- )
-}
 
 function App() {
   return (
     <>
       <Header />
-      <div className="container">
-        <ItemList />
+      <div className="item-list">
+        <Item />
+        <Item />
+        <Item />
       </div>
     </>
   )
